@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CheckInApplication</string>
+    <string name="_10_30_am">10:30 AM</string>
+    <string name="checked_in_at">CHECKED IN AT </string>
+    <string name="an_evening_of_comedy">An Evening of Comedy</string>
+    <string name="east_dining_center">East Dining Center</string>
+    <string name="check_out">CHECK OUT</string>
+    <string name="checked_out_at">CHECKED OUT AT </string>
+    <string name="march_3rd_monday">March 3rd - Monday</string>
+    <string name="search">Search</string>
+    <string name="check_in">CHECK IN</string>
+</resources>

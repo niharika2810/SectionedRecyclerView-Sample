@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_text">14sp</dimen>
+    <dimen name="_10">10dp</dimen>
+    <dimen name="image_width">20dp</dimen>
+    <dimen name="image_height">20dp</dimen>
+    <dimen name="_16">16dp</dimen>
+    <dimen name="layout_bottom_padding">5dp</dimen>
+    <dimen name="_5">5dp</dimen>
+    <dimen name="label_10">10sp</dimen>
+    <dimen name="_20">20dp</dimen>
+    <dimen name="_12">12dp</dimen>
+    <dimen name="_12sp">12sp</dimen>
+    <dimen name="_14sp">14sp</dimen>
+    <dimen name="_3">3dp</dimen>
+    <dimen name="_2">2dp</dimen>
+    <dimen name="_15">15dp</dimen>
+    <dimen name="_4">4dp</dimen>
+    <dimen name="_10sp">10sp</dimen>
+    <dimen name="_9sp">9sp</dimen>
+    <dimen name="_11">11sp</dimen>
+</resources>
