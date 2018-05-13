@@ -2,8 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_10">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGreen" />
 
     <TextView
         android:id="@+id/txt_header"
@@ -14,5 +19,11 @@
         android:padding="@dimen/_10"
         android:text="@string/march_3rd_monday"
         android:textColor="@color/colorGreen"
-        android:textSize="@dimen/header_text" />
+        android:textSize="@dimen/_12sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGreen" />
 </LinearLayout>
