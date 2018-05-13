@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import involvio.checkinapplication.R;
-import involvio.checkinapplication.adapter.RecyclerAdapter;
+import involvio.checkinapplication.adapter.CheckInHistoryAdapter;
 import involvio.checkinapplication.model.Order;
 import involvio.checkinapplication.utility.CheckoutHistory;
 
@@ -63,7 +63,7 @@ public class CheckInHistory extends AppCompatActivity {
         setSections(sections, checkoutHistories);
 
         //Setting up the adapter with Section and cell values
-        recyclerView.setAdapter(new RecyclerAdapter(checkoutHistories, this));
+        recyclerView.setAdapter(new CheckInHistoryAdapter(checkoutHistories, this));
     }
 
     public void initToolbar() {

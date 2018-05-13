@@ -27,13 +27,13 @@ import involvio.checkinapplication.utility.Util;
  * RecyclerAdapter class
  * Created by Niharika on 13-05-2018.
  */
-public class RecyclerAdapter extends SectionedRecyclerViewAdapter<RecyclerView.ViewHolder> {
+public class CheckInHistoryAdapter extends SectionedRecyclerViewAdapter<RecyclerView.ViewHolder> {
 
     private List<CheckoutHistory> checkoutHistories;
 
     private Context mContext;
 
-    public RecyclerAdapter(List<CheckoutHistory> checkoutHistories, Context mContext) {
+    public CheckInHistoryAdapter(List<CheckoutHistory> checkoutHistories, Context mContext) {
         this.checkoutHistories = checkoutHistories;
         this.mContext = mContext;
     }
