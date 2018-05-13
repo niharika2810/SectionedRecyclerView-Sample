@@ -4,7 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorGreen">#7ff2dc</color>
-    <color name="header_back">#57d9fff7</color>
+    <color name="section_bg_fill">#57d9fff7</color>
     <color name="card_background">#f9f9f9</color>
     <color name="cell_background">#f9f9f9</color>
     <color name="view_color">#000</color>
