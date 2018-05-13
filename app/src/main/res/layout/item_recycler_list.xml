@@ -10,8 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:baselineAligned="false">
+        android:layout_height="wrap_content">
 
 
         <RelativeLayout
@@ -38,6 +37,7 @@
 
 
         <LinearLayout
+            android:id="@+id/lin_cell"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="3dp"
@@ -45,8 +45,9 @@
             android:layout_marginStart="@dimen/_16"
             android:layout_weight="1"
             android:background="@android:color/white"
+            android:elevation="3dp"
             android:orientation="vertical"
-            tools:ignore="RtlHardcoded">
+            android:paddingBottom="@dimen/_10">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -177,7 +178,7 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="@dimen/_5"
                     android:paddingTop="@dimen/_5"
-                    android:text="@string/check_out"
+                    android:text="@string/check_in"
                     android:textColor="@color/check_in"
                     android:textSize="@dimen/_10sp" />
             </LinearLayout>
