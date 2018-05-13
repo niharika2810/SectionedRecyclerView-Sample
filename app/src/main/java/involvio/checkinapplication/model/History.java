@@ -1,4 +1,4 @@
-package involvio.checkinapplication.pojo;
+package involvio.checkinapplication.model;
 
 import java.util.ArrayList;
 

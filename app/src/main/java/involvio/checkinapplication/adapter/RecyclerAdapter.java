@@ -11,16 +11,14 @@ import android.widget.TextView;
 
 
 import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import involvio.checkinapplication.R;
-import involvio.checkinapplication.pojo.Event;
-import involvio.checkinapplication.pojo.Order;
+import involvio.checkinapplication.model.Event;
+import involvio.checkinapplication.model.Order;
 import involvio.checkinapplication.utility.CheckoutHistory;
 import involvio.checkinapplication.utility.Util;
 

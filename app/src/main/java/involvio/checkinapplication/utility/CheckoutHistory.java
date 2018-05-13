@@ -9,7 +9,7 @@ import java.util.Calendar;
 import java.util.Locale;
 import java.util.TimeZone;
 
-import involvio.checkinapplication.pojo.Order;
+import involvio.checkinapplication.model.Order;
 
 public class CheckoutHistory {
 

@@ -20,7 +20,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import involvio.checkinapplication.R;
 import involvio.checkinapplication.adapter.RecyclerAdapter;
-import involvio.checkinapplication.pojo.Order;
+import involvio.checkinapplication.model.Order;
 import involvio.checkinapplication.utility.CheckoutHistory;
 
 /**
