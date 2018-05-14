@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <View
@@ -9,16 +10,17 @@
         android:layout_height="0.5dp"
         android:background="@color/colorGreen" />
 
-    <TextView
+    <involvio.checkinapplication.helper.CustomTextView
         android:id="@+id/txt_header"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/section_bg_fill"
         android:gravity="start"
+        app:customFont="roboto.medium.ttf"
         android:padding="@dimen/_10"
         android:text="@string/march_3rd_monday"
         android:textColor="@color/colorGreen"
-        android:textSize="@dimen/_12sp" />
+        android:textSize="@dimen/_14sp" />
 
 
     <View

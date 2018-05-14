@@ -90,68 +90,30 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/item_desc_check_in"
+                <involvio.checkinapplication.helper.CustomTextView
+                    android:id="@+id/item_txt_check_in"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    app:customFont="roboto.regular.ttf"
                     android:text="@string/checked_in_at"
                     android:textColor="@color/time_label"
-                    android:textSize="@dimen/_10" />
+                    android:textSize="@dimen/_14sp" />
 
-                <TextView
-                    android:id="@+id/item_txt_chk_in_at"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/_10_30_am"
-                    android:textColor="@color/time_label"
-                    android:textSize="@dimen/_10" />
 
-                <LinearLayout
-                    android:id="@+id/ll_chk_out"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_5"
-                    android:layout_marginStart="@dimen/_5"
-                    android:orientation="horizontal"
-                    android:visibility="gone">
-
-                    <View
-                        android:id="@+id/view_lin1"
-                        android:layout_width="1dp"
-                        android:layout_height="@dimen/_15"
-                        android:background="@color/time_label" />
-
-                    <TextView
-                        android:id="@+id/item_desc_check_out"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginStart="5dp"
-                        android:text="@string/checked_out_at"
-                        android:textColor="@color/time_label"
-                        android:textSize="@dimen/_10" />
-
-                    <TextView
-                        android:id="@+id/item_txt_chk_out_at"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/_10_30_am"
-                        android:textColor="@color/time_label"
-                        android:textSize="@dimen/_10" />
-                </LinearLayout>
             </LinearLayout>
 
-            <TextView
+            <involvio.checkinapplication.helper.CustomTextView
                 android:id="@+id/item_txt_event_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
+                app:customFont="roboto.regular.ttf"
                 android:text="@string/an_evening_of_comedy"
                 android:textColor="@color/event_label"
-                android:textSize="@dimen/_14sp" />
+                android:textSize="@dimen/_18sp" />
 
 
-            <TextView
+            <involvio.checkinapplication.helper.CustomTextView
                 android:id="@+id/item_txt_loc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -159,9 +121,12 @@
                 android:layout_marginTop="4dp"
                 android:drawableLeft="@drawable/ic_location"
                 android:drawablePadding="4dp"
+                app:customFont="roboto.regular.ttf"
+                android:drawableStart="@drawable/ic_location"
+                android:maxLines="2"
                 android:text="@string/east_dining_center"
                 android:textColor="@color/colorGreen"
-                android:textSize="@dimen/_10sp" />
+                android:textSize="@dimen/_12sp" />
 
 
             <LinearLayout
@@ -179,15 +144,16 @@
                     android:layout_height="1dp"
                     android:background="@color/divider_horizontal_color" />
 
-                <TextView
+                <involvio.checkinapplication.helper.CustomTextView
                     android:id="@+id/item_check_in"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="@dimen/_5"
                     android:paddingTop="@dimen/_5"
+                    app:customFont="roboto.medium.ttf"
                     android:text="@string/check_in"
                     android:textColor="@color/check_in"
-                    android:textSize="@dimen/_10sp" />
+                    android:textSize="@dimen/_20sp" />
             </LinearLayout>
 
         </LinearLayout>
