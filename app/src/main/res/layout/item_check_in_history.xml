@@ -76,7 +76,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:id="@+id/lin_cell"
+            android:id="@+id/ll_cell"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -107,7 +107,7 @@
                     android:textSize="@dimen/_10" />
 
                 <LinearLayout
-                    android:id="@+id/lin_chk_out"
+                    android:id="@+id/ll_chk_out"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/_5"
@@ -165,7 +165,7 @@
 
 
             <LinearLayout
-                android:id="@+id/lin_do_check_in"
+                android:id="@+id/ll_do_check_in"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_5"

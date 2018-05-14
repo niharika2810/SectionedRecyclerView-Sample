@@ -83,7 +83,7 @@ public class CheckInHistoryAdapter extends SectionedRecyclerViewAdapter<Recycler
 
         //If Checked out time is there,then only show Check out time else View won't be visible
         if (order.getCheckedOutAt() != null) {
-            itemViewHolder.linCheckedOut.setVisibility(View.VISIBLE);
+            itemViewHolder.llCheckedOut.setVisibility(View.VISIBLE);
             String itemCheckedOut = order.getCheckedOutAt();
             itemViewHolder.textCheckedOut.setText(Util.getFormattedTime(itemCheckedOut));
         }
@@ -97,11 +97,11 @@ public class CheckInHistoryAdapter extends SectionedRecyclerViewAdapter<Recycler
         }
 
         //Cell tap
-        itemViewHolder.linCard.setOnClickListener(new View.OnClickListener() {
+        itemViewHolder.llCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (order.getCanCheckOut()) {
-                    toggleCheckInButtonVisibility(itemViewHolder.linDoCheckIn);
+                    toggleCheckInButtonVisibility(itemViewHolder.llDoCheckIn);
                 }
             }
         });
@@ -157,11 +157,11 @@ public class CheckInHistoryAdapter extends SectionedRecyclerViewAdapter<Recycler
         String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
         order.setCheckedOutAt(currentDateTimeString);
         //Show checked out view to the user
-        itemViewHolder.linCheckedOut.setVisibility(View.VISIBLE);
+        itemViewHolder.llCheckedOut.setVisibility(View.VISIBLE);
         itemViewHolder.textCheckedOut.setText(Util.getFormattedTime(currentDateTimeString));
 
         //Hide Checkgit commit -m "first commit" in button as we have already done check in
-        itemViewHolder.linDoCheckIn.setVisibility(View.GONE);
+        itemViewHolder.llDoCheckIn.setVisibility(View.GONE);
         order.setCanCheckOut(false);
 
         //Reload
@@ -171,10 +171,10 @@ public class CheckInHistoryAdapter extends SectionedRecyclerViewAdapter<Recycler
     /**
      * Method to toggle visibility for Check in on cell click
      *
-     * @param linDoCheckIn -linearlayout for Checkin button
+     * @param llDoCheckIn -linearlayout for Checkin button
      */
-    private void toggleCheckInButtonVisibility(LinearLayout linDoCheckIn) {
-        linDoCheckIn.setVisibility(linDoCheckIn.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
+    private void toggleCheckInButtonVisibility(LinearLayout llDoCheckIn) {
+        llDoCheckIn.setVisibility(llDoCheckIn.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
     }
 
     // SectionViewHolder Class for Sections
@@ -199,14 +199,14 @@ public class CheckInHistoryAdapter extends SectionedRecyclerViewAdapter<Recycler
         TextView textEventName;
         @BindView(R.id.item_txt_loc)
         TextView textLocationName;
-        @BindView(R.id.lin_chk_out)
-        LinearLayout linCheckedOut;
-        @BindView(R.id.lin_do_check_in)
-        LinearLayout linDoCheckIn;
+        @BindView(R.id.ll_chk_out)
+        LinearLayout llCheckedOut;
+        @BindView(R.id.ll_do_check_in)
+        LinearLayout llDoCheckIn;
         @BindView(R.id.item_check_in)
         TextView textDoCheckIn;
-        @BindView(R.id.lin_cell)
-        LinearLayout linCard;
+        @BindView(R.id.ll_cell)
+        LinearLayout llCard;
 
         ViewHolder(View itemView) {
             super(itemView);
