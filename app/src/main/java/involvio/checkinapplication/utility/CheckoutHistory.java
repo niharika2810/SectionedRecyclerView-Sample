@@ -1,7 +1,6 @@
 package involvio.checkinapplication.utility;
 
 
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -21,9 +20,7 @@ public class CheckoutHistory {
 
         calendar = Calendar.getInstance();
         try {
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.getDefault());
-            simpleDateFormat.setTimeZone(TimeZone.getDefault());
-            calendar.setTime(simpleDateFormat.parse(date));
+            calendar.setTime(Util.getInstance().getSimpleDateFormat().parse(date));
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -82,5 +79,13 @@ public class CheckoutHistory {
         return orders;
     }
 
+    /**
+     * @return Date and Week day in proper format
+     */
+    // Method to set date and time in format
+    public String getDateAndTime() {
+        return this.getMonthName() + " " +
+                this.getDate() + " - " + this.getDayName();
+    }
 
 }
