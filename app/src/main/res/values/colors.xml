@@ -10,7 +10,7 @@
     <color name="view_color">#000</color>
     <color name="vertical_short_view">#A9A9A9</color>
     <color name="event_label">#727272</color>
-    <color name="horizontal_view_color">#e3e3e3</color>
+    <color name="divider_horizontal_color">#e3e3e3</color>
     <color name="check_in">#248dba</color>
     <color name="time_label">#A9A9A9</color>
     <color name="toolbar_background">#248dba</color>

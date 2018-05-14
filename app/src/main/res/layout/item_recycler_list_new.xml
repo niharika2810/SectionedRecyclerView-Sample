@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_left_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_left_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_right_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_top_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_top_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_bottom_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/divider_horizontal_color"
+        app:layout_constraintBottom_toTopOf="@id/guide_bottom_1"
+        app:layout_constraintLeft_toRightOf="@+id/guide_left_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_location"
+        android:layout_width="@dimen/_12"
+        android:layout_height="@dimen/_15"
+        android:contentDescription="@null"
+        app:layout_constraintLeft_toLeftOf="@id/guide_left_1"
+        app:layout_constraintRight_toRightOf="@id/guide_left_1"
+        app:layout_constraintTop_toBottomOf="@id/guide_top_2"
+        app:srcCompat="@drawable/ic_location_white" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintLeft_toRightOf="@id/guide_left_2"
+        app:layout_constraintTop_toBottomOf="@id/guide_top_1"
+        app:layout_constraintBottom_toTopOf="@id/guide_bottom_1"
+        app:layout_constraintRight_toLeftOf="@id/guide_right_1">
+
+        <LinearLayout
+            android:id="@+id/lin_cell"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_desc_check_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checked_in_at"
+                    android:textColor="@color/time_label"
+                    android:textSize="@dimen/_11" />
+
+                <TextView
+                    android:id="@+id/item_txt_chk_in_at"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_10_30_am"
+                    android:textColor="@color/time_label"
+                    android:textSize="@dimen/_11" />
+
+                <LinearLayout
+                    android:id="@+id/lin_chk_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5"
+                    android:layout_marginStart="@dimen/_5"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <View
+                        android:id="@+id/view_lin1"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/_15"
+                        android:background="@color/time_label" />
+
+                    <TextView
+                        android:id="@+id/item_desc_check_out"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/checked_out_at"
+                        android:textColor="@color/time_label"
+                        android:textSize="@dimen/_11" />
+
+                    <TextView
+                        android:id="@+id/item_txt_chk_out_at"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_10_30_am"
+                        android:textColor="@color/time_label"
+                        android:textSize="@dimen/_11" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
+
+
