@@ -12,10 +12,10 @@
     <dimen name="_2">2dp</dimen>
     <dimen name="_15">15dp</dimen>
     <dimen name="_4">4dp</dimen>
-    <dimen name="font_10sp">8sp</dimen>
+    <dimen name="font_10sp">10sp</dimen>
     <dimen name="font_9sp">9sp</dimen>
-    <dimen name="font_18sp">16sp</dimen>
-    <dimen name="font_20sp">16sp</dimen>
-    <dimen name="font_14sp">12sp</dimen>
-    <dimen name="font_12sp">10sp</dimen>
+    <dimen name="font_18sp">18sp</dimen>
+    <dimen name="font_20sp">20sp</dimen>
+    <dimen name="font_14sp">14sp</dimen>
+    <dimen name="font_12sp">12sp</dimen>
 </resources>
