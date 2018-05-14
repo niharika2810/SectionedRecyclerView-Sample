@@ -80,7 +80,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -93,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/checked_in_at"
                     android:textColor="@color/time_label"
-                    android:textSize="@dimen/_11" />
+                    android:textSize="@dimen/_10" />
 
                 <TextView
                     android:id="@+id/item_txt_chk_in_at"
@@ -101,7 +104,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/_10_30_am"
                     android:textColor="@color/time_label"
-                    android:textSize="@dimen/_11" />
+                    android:textSize="@dimen/_10" />
 
                 <LinearLayout
                     android:id="@+id/lin_chk_out"
@@ -126,7 +129,7 @@
                         android:layout_marginStart="5dp"
                         android:text="@string/checked_out_at"
                         android:textColor="@color/time_label"
-                        android:textSize="@dimen/_11" />
+                        android:textSize="@dimen/_10" />
 
                     <TextView
                         android:id="@+id/item_txt_chk_out_at"
@@ -134,7 +137,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/_10_30_am"
                         android:textColor="@color/time_label"
-                        android:textSize="@dimen/_11" />
+                        android:textSize="@dimen/_10" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -144,7 +147,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/an_evening_of_comedy"
                 android:textColor="@color/event_label"
-                android:textSize="@dimen/_12sp" />
+                android:textSize="@dimen/_12sp"
+                android:layout_marginTop="4dp"/>
 
 
             <LinearLayout
@@ -171,7 +175,7 @@
                     android:layout_marginStart="@dimen/_5"
                     android:text="@string/east_dining_center"
                     android:textColor="@color/colorGreen"
-                    android:textSize="@dimen/_9sp" />
+                    android:textSize="@dimen/_10sp" />
 
             </LinearLayout>
 
