@@ -1,5 +1,6 @@
 package involvio.checkinapplication.activity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -22,6 +23,7 @@ import involvio.checkinapplication.R;
 import involvio.checkinapplication.adapter.CheckInHistoryAdapter;
 import involvio.checkinapplication.model.Order;
 import involvio.checkinapplication.utility.CheckoutHistory;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 /**
  * CheckInHistory class
@@ -45,6 +47,11 @@ public class CheckInHistoryActivity extends AppCompatActivity {
         initToolbar();
         setAdapter();
 
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
     void setAdapter() {

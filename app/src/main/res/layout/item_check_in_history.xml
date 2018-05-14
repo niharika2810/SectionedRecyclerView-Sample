@@ -97,7 +97,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/checked_in_at"
                     android:textColor="@color/time_label"
-                    android:textSize="@dimen/_14sp" />
+                    android:textSize="@dimen/font_14sp" />
 
 
             </LinearLayout>
@@ -109,7 +109,7 @@
                 android:layout_marginTop="2dp"
                 android:text="@string/an_evening_of_comedy"
                 android:textColor="@color/event_label"
-                android:textSize="@dimen/_18sp" />
+                android:textSize="@dimen/font_18sp" />
 
 
             <TextView
@@ -125,7 +125,7 @@
                 android:maxLines="2"
                 android:text="@string/east_dining_center"
                 android:textColor="@color/colorGreen"
-                android:textSize="@dimen/_12sp" />
+                android:textSize="@dimen/font_12sp" />
 
 
             <LinearLayout
@@ -152,7 +152,7 @@
                     android:paddingTop="@dimen/_5"
                     android:text="@string/check_in"
                     android:textColor="@color/check_in"
-                    android:textSize="@dimen/_20sp" />
+                    android:textSize="@dimen/font_20sp" />
             </LinearLayout>
 
         </LinearLayout>

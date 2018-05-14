@@ -21,7 +21,7 @@
         android:padding="@dimen/_10"
         android:text="@string/march_3rd_monday"
         android:textColor="@color/colorGreen"
-        android:textSize="@dimen/_14sp" />
+        android:textSize="@dimen/font_14sp" />
 
 
     <View
