@@ -93,7 +93,7 @@ public class CheckInHistoryAdapter extends SectionedRecyclerViewAdapter<Recycler
         if (!TextUtils.isEmpty(itemLocation)) {
             itemViewHolder.textLocationName.setText(itemLocation);
         } else {
-            itemViewHolder.linLocation.setVisibility(View.GONE);
+            itemViewHolder.textLocationName.setVisibility(View.GONE);
         }
 
         //Cell tap
@@ -205,8 +205,6 @@ public class CheckInHistoryAdapter extends SectionedRecyclerViewAdapter<Recycler
         LinearLayout linDoCheckIn;
         @BindView(R.id.item_check_in)
         TextView textDoCheckIn;
-        @BindView(R.id.lin_loc)
-        LinearLayout linLocation;
         @BindView(R.id.lin_cell)
         LinearLayout linCard;
 
