@@ -78,7 +78,7 @@ public class CheckInHistoryActivity extends AppCompatActivity {
     //Setting up the sections according to date
     private void setSections(ArrayList<Order> sections, ArrayList<CheckoutHistory> checkoutHistories) {
         for (int i = 0; i < sections.size(); i++) {
-            CheckoutHistory checkoutHistory = new CheckoutHistory(sections.get(i).getCreatedAt(), sections.get(i));
+            CheckoutHistory checkoutHistory = new CheckoutHistory(sections.get(i).getEvent().getCreatedAt(), sections.get(i));
             int index = checkoutHistories.indexOf(checkoutHistory);
             if (index < 0) {
                 checkoutHistories.add(checkoutHistory);
