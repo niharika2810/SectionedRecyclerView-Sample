@@ -9,11 +9,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
-import java.util.TimeZone;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -65,7 +62,7 @@ public class CheckInHistoryAdapter extends SectionedRecyclerViewAdapter<Recycler
     // Bind values on Header
     @Override
     public void onBindHeaderViewHolder(RecyclerView.ViewHolder holder, int section) {
-        String sectionName = Util.getDateAndTime(checkoutHistories.get(section));
+        String sectionName = checkoutHistories.get(section).getDateAndTime();
         SectionViewHolder sectionViewHolder = (SectionViewHolder) holder;
         sectionViewHolder.txtHeader.setText(sectionName);
     }
@@ -75,7 +72,7 @@ public class CheckInHistoryAdapter extends SectionedRecyclerViewAdapter<Recycler
     public void onBindViewHolder(RecyclerView.ViewHolder holder, final int section, int relativePosition, int absolutePosition) {
         final Order order = checkoutHistories.get(section).getOrders().get(relativePosition);
         String itemEventName = order.getEvent().getName();
-        String itemLocation = Util.getLocationInFormat(order);
+        String itemLocation = order.getLocationInFormat();
 
         final ViewHolder itemViewHolder = (ViewHolder) holder;
 
@@ -111,7 +108,7 @@ public class CheckInHistoryAdapter extends SectionedRecyclerViewAdapter<Recycler
     }
 
     private void displayCheckInAndCheckoutTime(Order order, ViewHolder itemViewHolder) {
-        String orderFormattedTime = Util.getCheckInCheckoutTimeInFormat(this.mContext, order.getCreatedAt(), order.getCheckedOutAt());
+        String orderFormattedTime = order.getCheckInCheckoutTimeInFormat(this.mContext);
         itemViewHolder.textCheckedIn.setText(orderFormattedTime);
     }
 
@@ -125,7 +122,7 @@ public class CheckInHistoryAdapter extends SectionedRecyclerViewAdapter<Recycler
     private void doCheckInAndDisplayCheckedOutTime(Order order, ViewHolder itemViewHolder) {
 
         // Get current time stamp
-        String checkoutTime = Util.formatCheckoutTime(new Date());
+        String checkoutTime = Util.getInstance().formatCheckoutTime(new Date());
         order.setCheckedOutAt(checkoutTime);
 
         //Hide button as we have already done check in
