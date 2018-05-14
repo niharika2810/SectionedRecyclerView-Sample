@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activity.CheckInHistory"
+            android:name=".activity.CheckInHistoryActivity"
             android:label="Check In History">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

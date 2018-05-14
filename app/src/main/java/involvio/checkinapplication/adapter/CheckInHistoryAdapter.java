@@ -53,11 +53,11 @@ public class CheckInHistoryAdapter extends SectionedRecyclerViewAdapter<Recycler
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, boolean header) {
         if (header) {
             View view = LayoutInflater.from(mContext)
-                    .inflate(R.layout.item_recycler_section, parent, false);
+                    .inflate(R.layout.item_check_in_history_section, parent, false);
             return new SectionViewHolder(view);
         } else {
             View view = LayoutInflater.from(mContext)
-                    .inflate(R.layout.item_recycler_list_new, parent, false);
+                    .inflate(R.layout.item_check_in_history, parent, false);
             return new ViewHolder(view);
         }
     }

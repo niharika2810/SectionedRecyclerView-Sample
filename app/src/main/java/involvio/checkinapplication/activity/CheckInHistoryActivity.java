@@ -28,7 +28,7 @@ import involvio.checkinapplication.utility.CheckoutHistory;
  * Created by Niharika on 13-05-2018.
  */
 
-public class CheckInHistory extends AppCompatActivity {
+public class CheckInHistoryActivity extends AppCompatActivity {
 
     @BindView(R.id.recycler_view)
     RecyclerView recyclerView;
@@ -39,7 +39,7 @@ public class CheckInHistory extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_check_in);
+        setContentView(R.layout.activity_check_in_history);
         // bind the view using butterknife
         ButterKnife.bind(this);
         initToolbar();
