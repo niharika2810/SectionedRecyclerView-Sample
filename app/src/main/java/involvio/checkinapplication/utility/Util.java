@@ -35,4 +35,19 @@ public class Util {
 
         return null;
     }
+
+    //Get time with am/pm marker
+    public static String getFormattedTimedddd(String date) {
+        Log.d("Date", date);
+        try {
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM dd, yyyy HH:mm:ss a", Locale.getDefault());
+            simpleDateFormat.setTimeZone(TimeZone.getDefault());
+            Date parse = simpleDateFormat.parse(date);
+            return new SimpleDateFormat("H:mm a", Locale.getDefault()).format(parse);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
 }
