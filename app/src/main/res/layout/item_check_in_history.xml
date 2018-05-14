@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    tools:ignore="MissingPrefix">
 
 
     <android.support.constraint.Guideline
@@ -90,11 +91,10 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <involvio.checkinapplication.helper.CustomTextView
+                <TextView
                     android:id="@+id/item_txt_check_in"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:customFont="roboto.regular.ttf"
                     android:text="@string/checked_in_at"
                     android:textColor="@color/time_label"
                     android:textSize="@dimen/_14sp" />
@@ -102,18 +102,17 @@
 
             </LinearLayout>
 
-            <involvio.checkinapplication.helper.CustomTextView
+            <TextView
                 android:id="@+id/item_txt_event_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                app:customFont="roboto.regular.ttf"
                 android:text="@string/an_evening_of_comedy"
                 android:textColor="@color/event_label"
                 android:textSize="@dimen/_18sp" />
 
 
-            <involvio.checkinapplication.helper.CustomTextView
+            <TextView
                 android:id="@+id/item_txt_loc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -121,8 +120,8 @@
                 android:layout_marginTop="4dp"
                 android:drawableLeft="@drawable/ic_location"
                 android:drawablePadding="4dp"
-                app:customFont="roboto.regular.ttf"
                 android:drawableStart="@drawable/ic_location"
+                android:ellipsize="end"
                 android:maxLines="2"
                 android:text="@string/east_dining_center"
                 android:textColor="@color/colorGreen"
@@ -144,13 +143,13 @@
                     android:layout_height="1dp"
                     android:background="@color/divider_horizontal_color" />
 
-                <involvio.checkinapplication.helper.CustomTextView
+                <TextView
+                    fontPath="fonts/roboto.medium.ttf"
                     android:id="@+id/item_check_in"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="@dimen/_5"
                     android:paddingTop="@dimen/_5"
-                    app:customFont="roboto.medium.ttf"
                     android:text="@string/check_in"
                     android:textColor="@color/check_in"
                     android:textSize="@dimen/_20sp" />

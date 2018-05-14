@@ -3,15 +3,12 @@ package involvio.checkinapplication.adapter;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -21,7 +18,6 @@ import java.util.TimeZone;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import involvio.checkinapplication.R;
-import involvio.checkinapplication.helper.CustomTextView;
 import involvio.checkinapplication.model.Order;
 import involvio.checkinapplication.utility.CheckoutHistory;
 import involvio.checkinapplication.utility.Util;
@@ -87,6 +83,7 @@ public class CheckInHistoryAdapter extends SectionedRecyclerViewAdapter<Recycler
 
         itemViewHolder.textEventName.setText(itemEventName);
 
+        //if all the keys are null,there's no point of displaying address field on screen
         if (!TextUtils.isEmpty(itemLocation)) {
             itemViewHolder.textLocationName.setText(itemLocation);
         } else {
@@ -128,9 +125,7 @@ public class CheckInHistoryAdapter extends SectionedRecyclerViewAdapter<Recycler
     private void doCheckInAndDisplayCheckedOutTime(Order order, ViewHolder itemViewHolder) {
 
         // Get current time stamp
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.getDefault());
-        simpleDateFormat.setTimeZone(TimeZone.getDefault());
-        String checkoutTime = simpleDateFormat.format(new Date());
+        String checkoutTime = Util.formatCheckoutTime(new Date());
         order.setCheckedOutAt(checkoutTime);
 
         //Hide button as we have already done check in
@@ -165,15 +160,15 @@ public class CheckInHistoryAdapter extends SectionedRecyclerViewAdapter<Recycler
     // ItemViewHolder Class for Items in each Section
     class ViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.item_txt_check_in)
-        CustomTextView textCheckedIn;
+        TextView textCheckedIn;
         @BindView(R.id.item_txt_event_name)
-        CustomTextView textEventName;
+        TextView textEventName;
         @BindView(R.id.item_txt_loc)
-        CustomTextView textLocationName;
+        TextView textLocationName;
         @BindView(R.id.ll_do_check_in)
         LinearLayout llDoCheckIn;
         @BindView(R.id.item_check_in)
-        CustomTextView textDoCheckIn;
+        TextView textDoCheckIn;
         @BindView(R.id.ll_cell)
         LinearLayout llCard;
 

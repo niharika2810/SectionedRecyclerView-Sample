@@ -43,7 +43,7 @@ public class Util {
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.getDefault());
             simpleDateFormat.setTimeZone(TimeZone.getDefault());
             Date parse = simpleDateFormat.parse(date);
-            return new SimpleDateFormat("H:mm a", Locale.getDefault()).format(parse);
+            return new SimpleDateFormat("hh:mm a", Locale.getDefault()).format(parse);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -97,4 +97,10 @@ public class Util {
         return null;
     }
 
+    public static String formatCheckoutTime(Date date) {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.getDefault());
+        simpleDateFormat.setTimeZone(TimeZone.getDefault());
+        return simpleDateFormat.format(date);
+
+    }
 }
