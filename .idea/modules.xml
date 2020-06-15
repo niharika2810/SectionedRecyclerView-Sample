@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CheckinApplication.iml" filepath="$PROJECT_DIR$/CheckinApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SectionedRecyclerView-Sample.iml" filepath="$PROJECT_DIR$/.idea/modules/SectionedRecyclerView-Sample.iml" group="SectionedRecyclerView-Sample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SectionedRecyclerView-Sample-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SectionedRecyclerView-Sample-app.iml" group="SectionedRecyclerView-Sample/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
